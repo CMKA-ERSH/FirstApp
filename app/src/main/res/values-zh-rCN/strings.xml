@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">第一个程序</string>
+    <string name="str">生日快乐！</string>
+    <string name="from">汤姆</string>
+</resources>
