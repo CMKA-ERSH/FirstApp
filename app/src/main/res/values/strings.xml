@@ -12,4 +12,11 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hint_txt">Input degrees Celcius here......</string>
+    <string name="btn_label">conversion</string>
+    <string name="reset_btn">reset</string>
+    <string name="label_add3">+3 point</string>
+    <string name="label_add2">+2 point</string>
+    <string name="label_add1">+1 point</string>
+    <string name="showText">Temperature</string>
 </resources>

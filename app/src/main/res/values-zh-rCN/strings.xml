@@ -3,4 +3,7 @@
     <string name="app_name">第一个程序</string>
     <string name="str">生日快乐！</string>
     <string name="from">汤姆</string>
+    <string name="showText">温度换算</string>
+    <string name="hint_txt">在这里输入摄氏度……</string>
+    <string name="btn_label">点击这里换算</string>
 </resources>
