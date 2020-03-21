@@ -6,4 +6,6 @@
     <string name="showText">温度换算</string>
     <string name="hint_txt">在这里输入摄氏度……</string>
     <string name="btn_label">点击这里换算</string>
+    <string name="btn_label1">换算（零上）</string>
+    <string name="btn_label2">换算（零下）</string>
 </resources>

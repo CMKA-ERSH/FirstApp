@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     TextView showText;
     EditText inp;
     Button btn1;
+    Button btn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +32,16 @@ public class MainActivity extends AppCompatActivity {
         inp = findViewById(R.id.inpText);
 
         btn1 = findViewById(R.id.btn1);
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                double c = Double.parseDouble(inp.getText().toString());
-                temperature(c);
-            }
-        });
+        btn2 = findViewById(R.id.btn2);
+
+    }
+    public void converse(View btn1){
+        double c = Double.parseDouble(inp.getText().toString());
+        temperature(c);
+    }
+    public void converseminus(View btn2){
+        double cMinus = 0 - Double.parseDouble(inp.getText().toString());
+        temperature(cMinus);
     }
     private void temperature(double i){
         Log.i("converse","temperature = "+i+"degrees Celsius");
