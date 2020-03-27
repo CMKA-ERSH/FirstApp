@@ -5,6 +5,7 @@
     <string name="from">Yours Tom</string>
     <string name="background">cat_background</string>
     <!-- Strings used for fragments for navigation -->
+    <string name="secApp_name">SecondApp</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
@@ -12,7 +13,7 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="hint_txt">Input degrees Celcius here......</string>
+    <string name="hint_txt">Input degrees Celsius here......</string>
     <string name="btn_label1">conversion</string>
     <string name="btn_label2">conversion(minus)</string>
     <string name="reset_btn">reset</string>
