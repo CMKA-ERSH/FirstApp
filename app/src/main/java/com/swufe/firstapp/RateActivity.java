@@ -54,7 +54,6 @@ public class RateActivity extends AppCompatActivity {
         //打开一个页面Activity
         Log.i("open","openOne:");
         Intent hello = new Intent(this,Second2Activity.class);
-        Intent web = new Intent(Intent.ACTION_VIEW, Uri.parse("http://baidu.com"));
-        startActivity(web);
+        startActivity(hello);
     }
 }
