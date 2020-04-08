@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class Second2Activity extends AppCompatActivity {
     TextView score;
+    TextView scoreB;
     Button btn_1;
     Button btn_2;
     Button btn_3;
@@ -21,24 +22,38 @@ public class Second2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_second2);
 
         score = (TextView)findViewById(R.id.score);
+        scoreB = (TextView)findViewById(R.id.scoreB);
 
 
 
         }
         public void btnadd1(View btn) {
-            showScore(1);
+            if(btn.getId() == R.id.btn_1){
+                showScore(1);
+            }else{
+                showScoreB(1);
+            }
         }
 
         public void btnadd2(View btn) {
-            showScore(2);
+            if(btn.getId() == R.id.btn_2){
+                showScore(2);
+            }else{
+                showScoreB(2);
+            }
         }
 
         public void btnadd3(View btn) {
-            showScore(3);
+            if(btn.getId() == R.id.btn_3){
+                showScore(3);
+            }else{
+                showScoreB(3);
+            }
         }
         public void resetbtn(View btn) {
             Log.i("reset","score=0");
             score.setText(""+0);
+            scoreB.setText(""+0);
         }
 
         private void showScore(int i){
@@ -46,5 +61,11 @@ public class Second2Activity extends AppCompatActivity {
             String oldScore = (String)score.getText();
             int newScore = Integer.parseInt(oldScore)+i;
             score.setText(""+newScore);
+        }
+        private void showScoreB(int i){
+            Log.i("show","int = "+i);
+            String oldScore = (String)scoreB.getText();
+            int newScore = Integer.parseInt(oldScore)+i;
+            scoreB.setText(""+newScore);
         }
 }

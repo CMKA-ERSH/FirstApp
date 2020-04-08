@@ -21,4 +21,12 @@
     <string name="label_add2">+2 point</string>
     <string name="label_add1">+1 point</string>
     <string name="showText">Temperature</string>
+    
+
+    <string name="rmb_hint">Input RMB…</string>
+
+    <string name="rate_app_name">Rate</string>
+    <string name="btn_dollar_label">Dollar</string>
+    <string name="btn_euro_label">Euro</string>
+    <string name="btn_won_label">Won</string>
 </resources>

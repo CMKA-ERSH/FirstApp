@@ -8,4 +8,9 @@
     <string name="btn_label">点击这里换算</string>
     <string name="btn_label1">换算（零上）</string>
     <string name="btn_label2">换算（零下）</string>
+    <string name="btn_dollar_label">美元</string>
+    <string name="rmb_hint">请输入人民币</string>
+    <string name="rate_app_name">汇率换算</string>
+    <string name="btn_euro_label">欧元</string>
+    <string name="btn_won_label">韩元</string>
 </resources>
