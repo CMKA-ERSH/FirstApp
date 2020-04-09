@@ -2,6 +2,7 @@ package com.swufe.firstapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -24,6 +25,7 @@ public class RateActivity extends AppCompatActivity {
         show = (TextView)findViewById(R.id.showOut);
     }
 
+    @SuppressLint("DefaultLocale")
     public void onClick(View btn){
         //获取用户输入内容
         String str = rmb.getText().toString();
@@ -53,7 +55,7 @@ public class RateActivity extends AppCompatActivity {
     public void openOne(View btn){
         //打开一个页面Activity
         Log.i("open","openOne:");
-        Intent hello = new Intent(this,Second2Activity.class);
+        Intent hello = new Intent(this,Rate2Activity.class);
         startActivity(hello);
     }
 }

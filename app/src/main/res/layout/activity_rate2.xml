@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RateActivity">
+
+    <EditText
+        android:id="@+id/dollar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/dollar_hint"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textSize="40sp"
+
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/showOut_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/rate_app_name"
+        android:textSize="35sp"
+        android:layout_marginTop="16dp"
+
+        />
+
+    <Button
+        android:id="@+id/btn_RMB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_orange_dark"
+
+        android:text="@string/btn_RMB_label"
+        android:textSize="25sp"
+
+        android:onClick="onClick"/>
+</LinearLayout>
