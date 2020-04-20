@@ -15,5 +15,6 @@
     <string name="btn_won_label">韩元</string>
     <string name="dollar_hint">请输入美元</string>
     <string name="btn_RMB_label">人民币</string>
-    <string name="btn_switch_dollar_label">切换至美元界面</string>
+    <string name="btn_opencfg_label">设置</string>
+    <string name="btn_save_label">保存</string>
 </resources>

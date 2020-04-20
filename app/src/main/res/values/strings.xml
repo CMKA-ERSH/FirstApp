@@ -23,13 +23,14 @@
     <string name="showText">Temperature</string>
 
 
-    <string name="rmb_hint">Input RMB…</string>
-    <string name="dollar_hint">Input Dollar…</string>
 
     <string name="rate_app_name">Rate</string>
     <string name="btn_dollar_label">Dollar</string>
     <string name="btn_euro_label">Euro</string>
     <string name="btn_won_label">Won</string>
     <string name="btn_RMB_label">RMB</string>
-    <string name="btn_switch_dollar_label">switch</string>
+    <string name="rmb_hint">Input RMB…</string>
+
+    <string name="btn_opencfg_label">config</string>
+    <string name="btn_save_label">save</string>
 </resources>
