@@ -1,5 +1,6 @@
 package com.swufe.firstapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -23,11 +24,27 @@ public class Second2Activity extends AppCompatActivity {
 
         score = (TextView)findViewById(R.id.score);
         scoreB = (TextView)findViewById(R.id.scoreB);
+    }
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        String scorea = ((TextView)findViewById(R.id.score)).getText().toString();
+        String scoreb = ((TextView)findViewById(R.id.scoreB)).getText().toString();
 
+        outState.putString("teama_score", scorea);
+        outState.putString("teamb_score", scoreb);
+    }
 
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        String scorea = savedInstanceState.getString("teama_score");
+        String scoreb = savedInstanceState.getString("teamb_score");
 
-        }
-        public void btnadd1(View btn) {
+        ((TextView)findViewById(R.id.score)).setText(scorea);
+        ((TextView)findViewById(R.id.scoreB)).setText(scoreb);
+    }
+
+    public void btnadd1(View btn) {
             if(btn.getId() == R.id.btn_1){
                 showScore(1);
             }else{
