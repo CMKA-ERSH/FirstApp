@@ -7,5 +7,11 @@
         android:icon="@android:drawable/ic_menu_manage"
         android:orderInCategory="101"
         android:title="Settings"
-        app:showAsAction="always" />
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/open_list"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:orderInCategory="101"
+        android:title="@string/label_open_list"
+        app:showAsAction="never" />
 </menu>
