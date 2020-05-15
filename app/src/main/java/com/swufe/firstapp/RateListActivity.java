@@ -31,13 +31,13 @@ public class RateListActivity extends ListActivity implements Runnable{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_rate_list);
-        List<String> list1 = new ArrayList<String>();
-        for(int i = 1; i < 100; i++){
-            list1.add("item" + i);
-        }
-
-        ListAdapter adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list1);
-        setListAdapter(adapter);
+//        List<String> list1 = new ArrayList<String>();
+//        for(int i = 1; i < 100; i++){
+//            list1.add("item" + i);
+//        }
+//
+//        ListAdapter adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list1);
+//        setListAdapter(adapter);
 
         Thread t = new Thread(this);
         t.start();

@@ -33,4 +33,7 @@
     <string name="btn_opencfg_label">config</string>
     <string name="btn_save_label">save</string>
     <string name="label_open_list">OpenList</string>
+    <string name="inpKeyword">Input keywords…</string>
+    <string name="newsSearch">Search</string>
+    <string name="emptyList">No Data...</string>
 </resources>
