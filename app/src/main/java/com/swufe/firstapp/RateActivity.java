@@ -39,6 +39,7 @@ import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 public class RateActivity extends AppCompatActivity implements Runnable {
     private static final String TAG = "Rate";
@@ -160,8 +161,20 @@ public class RateActivity extends AppCompatActivity implements Runnable {
             openConfig();
         }else if(item.getItemId()==R.id.open_list){
             //打开列表
-            Intent list = new Intent(this, MyList2Activity.class);
+            Intent list = new Intent(this, RateListActivity.class);
              startActivity(list);
+            //测试数据库
+//            RateItem item1 = new RateItem("aaaa","123");
+//            RateManager manager = new RateManager(this);
+//            manager.add(item1);
+//            manager.add(new RateItem("bbbb", "23.5"));
+//            Log.i(TAG, "onOptionsItemSelected: 写入完毕");
+//
+//            //查询
+//            List<RateItem> testList = manager.listAll();
+//            for(RateItem i: testList){
+//                Log.i(TAG, "onOptionsItemSelected: 取出数据[id = "+i.getId()+"] Name = "+i.getCurName()+"] Rate = "+i.getCurRate());
+//            }
         }
         return super.onOptionsItemSelected(item);
     }
